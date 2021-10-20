@@ -1,0 +1,95 @@
+:root {
+    --main-bg-color: #fff;
+    --main-bg-header:red;
+    --main-bg-menu:gray;
+    --main-bg-item:green;
+    --main-bg-footer:aqua;
+    --main-bg-list-item:rgb(194, 191, 13);
+    --color-white:#fff;
+    --height-item:150px;
+    --gap-size:10px;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    row-gap: var(--gap-size);
+    box-sizing: border-box;
+    background:white;
+
+}
+
+.header{
+    background: var(--main-bg-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+}
+
+.content_box{
+    display: flex;
+    column-gap: var(--gap-size);
+
+}
+
+.menu{
+    background: var(--main-bg-menu);
+    flex:1;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.post_list{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-size);
+    flex: 3;
+}
+
+.post_item{
+    background: var(--main-bg-item);
+    height: var(--height-item);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.list_for_item{
+    display: flex;
+    column-gap: var(--gap-size);
+}
+
+.list_item{
+    background: var(--main-bg-list-item);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+    flex: 1;
+}
+
+.footer{
+    background: var(--main-bg-footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+}
